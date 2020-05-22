@@ -13,7 +13,7 @@
                     return;
                 }
                     
-                if (node.href.includes('/pull/') && node.href.includes('/files') && !node.href.includes('w=1')) {
+                if (node.href.includes('/pull/') && node.href.endsWith('/files')) {
                     if (node.href.includes('?')) {
                         node.href += '&w=1';
                     } else {
